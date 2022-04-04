@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="Clock" content="Nothing Just a clock" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/fluency/48/000000/clock--v2.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Clock</title>
+  </head>
+  <body onload="startTime(); startDate()">
+    <div class="container">
+      <div class="gradient-text" id="date"></div>
+      <div class="gradient-text" id="time-display"></div>
+      <div class="gradient-text" id="content">
+        <p class="quote" id="quote"></p>
+        <p class="qoute" id="author"></p>
+      </div>
+    </div>
+    <div class="container">
+      <button id="gen" onclick="getNewQuote()">New Quote</button>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+  <script src="js/a.js"></script>
+</html>

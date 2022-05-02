@@ -2,7 +2,7 @@ html,
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -10,8 +10,9 @@ body {
   background-size: cover;
   z-index: -2;
 }
+
 .gradient-text {
-  background: linear-gradient(to right, #cac7c9, #ffffff);
+  background: linear-gradient(to right, #fff, #cac7c9);
   background-clip: text;
   -webkit-background-clip: text;
   -ms-background-clip: text;
@@ -24,6 +25,7 @@ body {
   letter-spacing: 0.2em;
   opacity: 0.6;
 }
+
 #time-display {
   font-size: 2.9em;
   top: 10px;
@@ -35,6 +37,7 @@ body {
 #content {
   height: 45vh;
 }
+
 .quote {
   max-height: 5vw;
   letter-spacing: 0.1em;
@@ -44,9 +47,11 @@ body {
   font-size: 2.5vw;
   font-variant: small-caps;
 }
+
 #author {
   font-size: 2vw;
 }
+
 .container {
   padding-top: 6em;
   text-align: center;
@@ -74,22 +79,27 @@ body {
   border: thin solid black;
   opacity: 0.8;
 }
+
 @media screen and (max-width: 615px) {
   #gen {
     width: 20%;
     font-size: medium;
   }
+
   #quote {
     font-size: 24px;
   }
+
   #author {
     margin-top: 100px;
     font-size: 20px;
   }
+
   #date {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 400px) {
   #gen {
     position: fixed;

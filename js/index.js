@@ -1,10 +1,10 @@
-const text = document.getElementById(`quote`);
-const author = document.getElementById(`author`);
+let text = document.getElementById("quote");
+let author = document.getElementById("author");
 
 const startTime = () => {
   let today = new Date();
   let time = today.toLocaleTimeString();
-  document.getElementById(`time-display`).innerHTML = time;
+  document.getElementById("time-display").innerHTML = time;
   const t = setTimeout(() => {
     startTime();
   }, 1000);
@@ -14,13 +14,13 @@ const startDate = () => {
   let today = new Date();
   let timeAndDate = today.toLocaleDateString();
   let days = [
-    `Sunday`,
-    `Monday`,
-    `Tuesday`,
-    `Wednesday`,
-    `Thursday`,
-    `Friday`,
-    `Saturday`,
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   let date = timeAndDate.slice(0, 10);
   document.getElementById(`date`).innerHTML = `${
@@ -41,7 +41,7 @@ const getNewQuote = async () => {
   if (quote.length > 80) {
     text.style.fontSize = `20px`;
   }
-  document.getElementById(`quote`).innerHTML = quote;
-  document.getElementById(`author`).innerHTML = `~ ${auth}`;
+  document.getElementById("quote").innerHTML = quote;
+  document.getElementById("author").innerHTML = `~ ${auth}`;
 };
 getNewQuote();
